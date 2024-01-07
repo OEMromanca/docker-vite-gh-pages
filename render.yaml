@@ -1,0 +1,9 @@
+services:
+  - name: your-service-name
+    type: web
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    env:
+      - key: NODE_ENV
+        value: production
+    port: 5173 # Vyberte si vhodný port pre svoju aplikáciu
